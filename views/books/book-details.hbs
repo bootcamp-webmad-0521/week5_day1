@@ -1,0 +1,26 @@
+<div class="container">
+
+    <h1>{{title}}</h1>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p><strong>Descripción</strong>: {{book.description}}</p>
+        </div>
+        <div class="col-md-4">
+            <p><strong>Puntuación</strong>: {{book.rating}}</p>
+            <p><strong>Autor/a</strong>: {{book.author}}</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <a href="/libros/listado" class="btn btn-dark">Volver al listado</a>
+    {{#if isAdmin}}
+    <br>
+    <br>
+    <a href="#" class="btn btn-danger">Eliminar</a>
+    {{/if}}
+
+</div>
